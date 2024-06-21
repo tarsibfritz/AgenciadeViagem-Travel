@@ -1,10 +1,9 @@
-
-import Contact from './Contact';
-import Team from './Team';
-import Price from './Price';
-import Services from './Services';
-import Slider from './Slider';
-import About from './About';
+import Contact from './Contact/Contact';
+import Team from './Team/Team';
+import Price from './Price/Price';
+import Services from './Services/Services';
+import Slider from './Slider/Slider';
+import About from './About/About';
 
 export default function Home() {
     return (

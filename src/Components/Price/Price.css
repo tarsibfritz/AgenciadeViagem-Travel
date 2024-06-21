@@ -1,0 +1,32 @@
+/* Price */
+#price {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#price h1 {
+    line-height: inherit !important;
+    font-weight: 800;
+}
+
+#price .card {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 30px;
+    border: 1px solid transparent !important;
+}
+
+#price .card h1 {
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.card-text {
+    font-weight: 600;
+}

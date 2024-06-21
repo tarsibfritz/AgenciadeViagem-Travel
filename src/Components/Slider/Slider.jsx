@@ -1,5 +1,6 @@
+import './Slider.css'
 
-// slide página principal
+// SLIDER PÁGINA PRINCIPAL
 export default function Slider() {
     return (
         <div id="slider">

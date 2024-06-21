@@ -1,0 +1,39 @@
+/* Services */
+#services {
+    text-align: center;
+    width: 100%;
+    float: left;
+    color: rgb(255, 255, 255);
+    background-image: url(../../Images/banner_bg_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+#services .card {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid transparent !important;
+}
+
+#services h1 {
+    font-weight: 700;
+}
+
+#services p {
+    padding: 10px;
+}
+
+.card-title {
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.card img {
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+}

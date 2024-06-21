@@ -1,230 +1,4 @@
-/* Home  */
-#slider {
-  background-image: url(./Images/banner_bg_1.png);
-  /* background-repeat: no-repeat; */
-  min-height: 130vh;
-  background-size: cover;
-  color: white;
-}
-
-#sliderimg {
-  width: 40%;
-  float: right;
-  height: 90vh;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-}
-
-#slidertext {
-  position: top;
-  float: left;
-  width: 55%;
-  margin: 25vh auto 0px 10px;
-  padding-left: 10px;
-}
-
-.btn {
-  border: 1.5px solid #f94242;
-
-  background-color: white;
-  font-weight: 600;
-  font-size: 14px;
-  color: rgb(0, 0, 0);
-}
-
-.btn a {
-  color: rgb(0, 0, 0);
-}
-
-a:hover {
-  text-decoration: none;
-}
-.btn a:hover {
-  color: white;
-}
-.btn:hover {
-  color: rgb(255, 255, 255) !important;
-  background-color: #f94242;
-  text-decoration: none;
-  border: 1.5px solid white;
-}
-
-/* About */
-#about {
-  display: flex;
-  padding: 20px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  justify-content: space-between;
-}
-
-#aboutHeading {
-  color: red;
-  font-size: 40px;
-  font-weight: 800;
-}
-
-#aboutImg {
-  width: 430px;
-  height: 400px;
-  background-image: url(./Images/about.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-}
-
-#aboutText {
-  width: 55%;
-}
-#aboutText p {
-  font-weight: 500;
-}
-#aboutText h1 {
-  font-weight: 700;
-}
-/* Services */
-#services {
-  text-align: center;
-  width: 100%;
-  float: left;
-  color: white;
-  background-image: url(./Images/banner_bg_1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#services .card {
-  width: 25%;
-  display: inline-block;
-  text-align: center;
-  margin-left: 2%;
-  margin-top: 30px;
-  background-color: transparent;
-  border: 1px solid transparent !important;
-}
-#services h1 {
-  font-weight: 700;
-}
-#services p {
-  padding: 10px;
-}
-.card-title {
-  font-weight: 700;
-  padding-top: 10px;
-}
-.card img {
-  width: 200px;
-  height: 180px;
-  border-radius: 50%;
-}
-
-/* Price */
-#price {
-  text-align: center;
-  padding-bottom: 30px;
-}
-#price h1 {
-  line-height: inherit !important;
-  font-weight: 800;
-}
-#price .card {
-  width: 25%;
-  display: inline-block;
-  text-align: center;
-  margin-left: 2%;
-  margin-top: 30px;
-  border: 1px solid transparent !important;
-}
-#price .card h1 {
-  font-weight: 700;
-}
-.card-body {
-  padding: 0 !important;
-  width: 100% !important;
-}
-.card-text {
-  font-weight: 600;
-}
-
-/* Team */
-#team {
-  text-align: center;
-  background-image: url(./Images/banner_bg_2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
-
-#team h1 {
-  margin-top: 100px;
-  font-weight: 800;
-}
-
-.teamtext img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.teamtext {
-  display: inline-block;
-  text-align: center;
-  width: 30%;
-}
-
-/* Contact */
-#contact {
-  padding-top: 40px;
-  text-align: center;
-}
-
-.contactUs {
-  width: 50%;
-  margin: auto;
-  padding: 20px;
-}
-#contact h1 {
-  font-weight: 800;
-}
-#contact button {
-  background-color: #fb5353;
-  color: white;
-}
-#contact button:hover {
-  background-color: #fb5353;
-  color: aliceblue !important;
-}
-
-/* Footer */
-.myfooter {
-  text-align: center;
-  width: 100%;
-  background-color: black;
-  float: left;
-}
-
-.myfooter .card {
-  display: inline-block;
-  text-align: center;
-  border: 0px none white !important;
-  background-color: black;
-  color: white;
-  width: 30%;
-  margin-left: 3%;
-}
-
-#rights {
-  text-align: center;
-  color: white;
-}
-
-.myfooter img {
-  border-radius: 50%;
-  margin-left: 10px;
-  height: 50px;
-  width: 50px;
-}
+/* RESPONSIVIDADE */
 
 /* Dispositivos extragrandes (laptops e desktops grandes, 1201px e superiores) */
 @media only screen and (min-width: 1201px) {
@@ -276,6 +50,7 @@ a:hover {
     color: white;
   }
 }
+
 /* Dispositivos médios (tablets em paisagem, de 768px a 992px) */
 @media only screen and (max-width: 992px) {
   #logo {
@@ -410,6 +185,7 @@ a:hover {
     letter-spacing: 0.3px;
   }
 }
+
 /* Dispositivos extra smalls (telefones, de 575px pra baixo...) */
 @media only screen and (max-width: 575px) {
   #slider {
@@ -423,9 +199,6 @@ a:hover {
   .navbar-brand h1 {
     font-size: 35px !important;
   }
-  /* #sliderimg {
-    display: none;
-  } */
 
   #slidertext p {
     padding: 5px;

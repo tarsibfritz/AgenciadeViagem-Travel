@@ -1,5 +1,5 @@
-import first from '../Images/colab1.jpg';
-
+import first from '../../Images/colab1.jpg';
+import './Team.css';
 
 export default function Team() {
     return (

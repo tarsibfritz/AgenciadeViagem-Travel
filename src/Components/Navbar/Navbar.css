@@ -1,16 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  padding-top: 80px;
-}
-
 /* NAVBAR */
 nav {
   display: flex;
@@ -85,6 +72,32 @@ a {
   border-radius: 5px;
   position: relative;
   cursor: pointer;
+}
+
+.btn {
+  border: 1.5px solid #f94242;
+
+  background-color: white;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.btn a {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  text-decoration: none;
+}
+.btn a:hover {
+  color: white;
+}
+.btn:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: #f94242;
+  text-decoration: none;
+  border: 1.5px solid white;
 }
 
 /* MENU */
@@ -270,15 +283,17 @@ body.active-modal {
   font-weight: 600;
 }
 
-
+/* RESPONSIVIDADE */
 @media (max-width: 1150px) {
   nav {
     padding: 0 40px 0 50px;
   }
+
   .navbar-brand {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
   }
+
   nav ul li a {
     color: #ffffff;
     font-weight: 600;
@@ -289,6 +304,7 @@ body.active-modal {
   .hide {
     display: none;
   }
+
   .show {
     display: inline;
   }
@@ -299,10 +315,12 @@ body.active-modal {
     right: 6%;
     display: block;
   }
+
   .logoo {
     position: relative;
     right: 0;
   }
+
   #click:checked ~ .menu-btn i:before {
     content: "\f00d";
   }
@@ -313,6 +331,7 @@ body.active-modal {
     display: flex;
     justify-content: flex-start;
   }
+
   nav ul {
     position: absolute;
     top: 69px;
@@ -325,52 +344,65 @@ body.active-modal {
     transition: all 0.3s ease;
     z-index: 100;
   }
+
   #click:checked ~ ul {
     left: 0;
   }
+
   nav ul li {
     width: 100%;
     margin: 22px 0;
   }
+
   nav ul li {
     margin-left: -100%;
     font-size: 20px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
+
   #click:checked ~ ul li {
     margin-left: 0px;
   }
+
   nav ul li.active,
   nav ul li:hover {
     background: none;
     color: rgb(0, 0, 0);
   }
+
   nav .logo {
     display: block;
   }
+
   .logo {
     display: none;
   }
+
   .logo {
     display: inline-block;
   }
 }
+
 @media (max-width: 744px) {
   .modal-content span p {
     font-size: 7px;
   }
+
   .btn-pr {
     top: 42px;
     left: 32%;
   }
+
   .inp {
     font-size: 10px;
   }
 }
+
 @media (max-width: 430px) {
   .modal-content span p {
     padding-left: 5px;
   }
+  
   .modal {
     margin: auto;
     width: 90%;

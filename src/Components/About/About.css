@@ -1,0 +1,37 @@
+/* ABOUT */
+#about {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  justify-content: space-between;
+}
+  
+#aboutHeading {
+  color: red;
+  font-size: 40px;
+  font-weight: 800;
+}
+  
+#aboutImg {
+  margin: 2% 2% 2% 8%;
+  width: 350px;
+  height: 325px;
+  background-image: url(../../Images/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+  
+#aboutText {
+  width: 55%;
+}
+
+#aboutText p {
+  font-weight: 500;
+}
+
+#aboutText h1 {
+  font-weight: 700;
+}

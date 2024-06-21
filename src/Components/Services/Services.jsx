@@ -1,7 +1,7 @@
-import first from '../Images/prato1.jpg';
-import second from '../Images/prato1.jpg';
-import third from '../Images/prato1.jpg';
-
+import first from '../../Images/prato1.jpg';
+import second from '../../Images/prato1.jpg';
+import third from '../../Images/prato1.jpg';
+import './Services.css';
 
 export default function Services() {
     return (

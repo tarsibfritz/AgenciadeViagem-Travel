@@ -1,0 +1,23 @@
+/* HOME  */
+#slider {
+    background-image: url(../../Images/banner_bg_1.png);
+    min-height: 130vh;
+    background-size: cover;
+    color: white;
+}
+  
+#sliderimg {
+    width: 40%;
+    float: right;
+    height: 90vh;
+    background-size: cover;
+}
+  
+#slidertext {
+    position: top;
+    float: left;
+    width: 55%;
+    margin: 25vh auto 0px 10px;
+    padding-left: 10px;
+}
+  

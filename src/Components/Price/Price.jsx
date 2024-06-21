@@ -1,5 +1,5 @@
 import PriceText from './PriceText';
-
+import './Price.css'
 
 export default function Price() {
     return (
