@@ -1,17 +1,15 @@
 import { useState, useEffect } from 'react';
-
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [modal, setModal] = useState(false);
 
     const handleMenuItemClick = () => {
         setMenuOpen(false);
     };
-
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -27,17 +25,20 @@ const Navbar = () => {
         };
     }, [menuOpen]);
 
+    useEffect(() => {
+        if (modal) {
+            document.body.classList.add("active-modal");
+        } else {
+            document.body.classList.remove("active-modal");
+        }
+    }, [modal]);
 
-
-    const [modal, setModal] = useState(false);
-    if (modal) {
-        document.body.classList.add("active-modal")
-    } else {
-        document.body.classList.remove("active-modal")
-
-    }
     const toggleModal = () => {
         setModal(!modal);
+    };
+
+    const closeModal = () => {
+        setModal(false);
     };
 
     const handleFormSubmit = (event) => {
@@ -46,7 +47,6 @@ const Navbar = () => {
         const emailInput = event.target.querySelector('input[type="email"]');
         const emailValue = emailInput.value.trim();
 
-
         if (!emailValue) {
             Swal.fire({
                 icon: 'error',
@@ -54,32 +54,33 @@ const Navbar = () => {
                 text: 'Please enter your email address!',
             });
             return;
+        } else {
+            closeModal();
+            setTimeout(() => {
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: 'Once submitted, you will not be able to change your details!',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, submit it!',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire(
+                            'Successfully Subscribed!',
+                            'Enjoy Your Subscription',
+                            'success'
+                        );
+                    }
+                });
+            }, 280); // Atraso para garantir que o modal feche antes do Swal aparecer
         }
-
-        Swal.fire({
-            title: 'Are you sure?',
-            text: 'Once submitted, you will not be able to change your details!',
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, submit it!',
-        }).then((result) => {
-            if (result.isConfirmed) {
-                Swal.fire(
-                    'Successfully Subscribed!',
-                    'Enjoy Your Subscription',
-                    'success'
-                );
-                toggleModal();
-            }
-        });
-     }
-
+    };
 
     return (
         <>
-            <nav >
+            <nav>
                 <input type="button" id="click" checked={menuOpen} onChange={() => setMenuOpen(!menuOpen)} />
                 <label htmlFor="click" className="menu-btn">
                     <i className="fas fa-bars"></i>
@@ -112,7 +113,7 @@ const Navbar = () => {
                         <p className='p-l-1'>Restaurante</p>
                         <h2>Assine nossa NewsLetter</h2>
                         <p>
-                        A assinatura é GRATUITA, assine e ganhe 20% OFF na primeira compra.
+                            A assinatura é GRATUITA, assine e ganhe 20% OFF na primeira compra.
                         </p>
                         <form onSubmit={handleFormSubmit}>
                             <input
@@ -121,9 +122,8 @@ const Navbar = () => {
                                 required
                                 placeholder='Seu Email'
                             />
-
                             <span>
-                                <p > <input id='same' type='checkbox' required className='in' />
+                                <p><input id='same' type='checkbox' required className='in' />
                                     <label htmlFor='same'> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quam libero consequuntur similique tempora fuga odio a possimus mollitia ducimus, itaque soluta officiis error, sapiente distinctio qui obcaecati culpa hic?</label>
                                 </p>
                             </span>
@@ -134,7 +134,6 @@ const Navbar = () => {
                         </button>
                     </div>
                 </div>
-
             )}
         </>
     );

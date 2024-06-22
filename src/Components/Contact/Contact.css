@@ -1,25 +1,57 @@
 /* Contact */
 #contact {
-    padding-top: 40px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    padding: 3em;
 }
   
-.contactUs {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-}
-
 #contact h1 {
     font-weight: 800;
 }
 
-#contact button {
-    background-color: #fb5353;
-    color: white;
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 }
 
-#contact button:hover {
-    background-color: #fb5353;
-    color: aliceblue !important;
-}  
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, textarea{
+    padding: 5px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgb(160, 160, 160);
+}
+
+.form-group.full-width{
+    grid-column: span 2;
+}
+
+.contact-button{
+    display: flex;
+    justify-content: center;
+}
+
+#contact button {
+    margin: 1.3em 0;
+    padding: 14px;
+    width: 7em;
+    border: none;
+    border-radius: 15px;
+    color: #000000;
+    background-color: #f5ecec;
+    transition: ease 0.3s;
+}
+
+#contact button:hover{
+    cursor: pointer;
+    background-color: #FA4949;
+}
+
