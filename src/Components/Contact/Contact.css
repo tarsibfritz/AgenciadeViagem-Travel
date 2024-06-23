@@ -1,13 +1,21 @@
 /* Contact */
 #contact {
+    background-image: url(../../Images/contato.png) ;
+    background-size: cover;
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 3em;
+    padding-top: 5px;
+    margin-top: -15px;
 }
-  
+
 #contact h1 {
-    font-weight: 800;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 42px;
+    color: var(--branco);
+    font-family: var(--bebas-font);
 }
 
 .form-grid {
@@ -17,9 +25,20 @@
 }
 
 .form-group{
+    color: var(--branco);
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 5px;  
+}
+
+.form-group p{
+    text-align: left;
+    font-family: var(--arimo-font);
+    font-weight: 00;
+}
+
+.email {
+    grid-column: span 2;
 }
 
 input, textarea{
@@ -45,13 +64,12 @@ input::placeholder, textarea::placeholder{
     width: 7em;
     border: none;
     border-radius: 15px;
-    color: #000000;
-    background-color: #f5ecec;
+    color: var(--preto);
+    background-color: var(--branco);
     transition: ease 0.3s;
 }
 
 #contact button:hover{
     cursor: pointer;
-    background-color: #FA4949;
+    background-color: var(--azul-tom3);
 }
-

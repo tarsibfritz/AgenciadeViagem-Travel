@@ -85,7 +85,7 @@ const Navbar = () => {
                 <label htmlFor="click" className="menu-btn">
                     <i className="fas fa-bars"></i>
                     <div id="logo">
-                        <Link to="/" className='navbar-brand'><h1>Restaurant</h1></Link>
+                        <Link to="/" className='navbar-brand'><h1>Travel</h1></Link>
                     </div>
                 </label>
                 <div className='navbar_menu'>
@@ -93,8 +93,8 @@ const Navbar = () => {
                         <li><NavLink activeclassname="active" to="/" onClick={handleMenuItemClick}>Inicio</NavLink></li>
                         <li><NavLink to="/about" onClick={handleMenuItemClick}>Sobre</NavLink></li>
                         <li><NavLink to="/services" onClick={handleMenuItemClick}>Serviços</NavLink></li>
-                        <li><NavLink to="/pricing" onClick={handleMenuItemClick}>Produtos</NavLink></li>
-                        <li><NavLink to="/team" onClick={handleMenuItemClick}>Equipe</NavLink></li>
+                        <li><NavLink to="/pricing" onClick={handleMenuItemClick}>Pacotes</NavLink></li>
+                        {/* <li><NavLink to="/team" onClick={handleMenuItemClick}>Equipe</NavLink></li> */}
                         <li><NavLink to="/contact" onClick={handleMenuItemClick}>Contato</NavLink></li>
                         <li><button onClick={toggleModal} className='btn btn-signup show'>sdfgfsdgdfgdfgd</button></li>
                     </ul>
@@ -109,8 +109,8 @@ const Navbar = () => {
                 <div className='modal'>
                     <div className='overlay'></div>
                     <div className='modal-content'>
-                        <h2 className='h1-1'>Restaurante Boca Aberta</h2>
-                        <p className='p-l-1'>Restaurante</p>
+                        <h2 className='h1-1'>Travel</h2>
+                        <p className='p-l-1'>Agência de viagens</p>
                         <h2>Assine nossa NewsLetter</h2>
                         <p>
                             A assinatura é GRATUITA, assine e ganhe 20% OFF na primeira compra.
@@ -124,7 +124,7 @@ const Navbar = () => {
                             />
                             <span>
                                 <p><input id='same' type='checkbox' required className='in' />
-                                    <label htmlFor='same'> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quam libero consequuntur similique tempora fuga odio a possimus mollitia ducimus, itaque soluta officiis error, sapiente distinctio qui obcaecati culpa hic?</label>
+                                    <label className='termos' htmlFor='same'> Eu aceito os termos e condições, política de privacidade e política de cookies</label>
                                 </p>
                             </span>
                             <button className='btn-pr' type='submit'>Assine</button>

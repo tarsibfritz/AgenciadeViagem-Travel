@@ -1,5 +1,4 @@
 import Contact from './Contact/Contact';
-import Team from './Team/Team';
 import Price from './Price/Price';
 import Services from './Services/Services';
 import Slider from './Slider/Slider';
@@ -10,9 +9,8 @@ export default function Home() {
         <div>
             <Slider />
             <About />
-            <Services />
             <Price />
-            <Team />
+            <Services />
             <Contact />
         </div>
     )

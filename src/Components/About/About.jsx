@@ -3,14 +3,17 @@ import './About.css';
 export default function About() {
     return (
         <div id="about">
-            <div id="aboutImg"></div>
-            <div id="aboutText">
-                <h4 id="aboutHeading">NOSSA HISTORIA</h4><br />
-                <h1>Sua principal referencia em refeição</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus eius laudantium. Dignissimos odit sit doloremque maiores itaque quibusdam natus vitae neque. Vel laudantium, ipsum nulla adipisci molestias ad ipsa.</p>
-                <br />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magnam assumenda ex repellendus doloremque ad vero perspiciatis ipsam officiis ea, quasi facere rem ipsa. Ut harum dicta amet iure repellat.</p>
+            <div className="about-content">
+                <div id="aboutImg"></div>
+                <div id="aboutText">
+                    <h2 id="aboutHeading">SOBRE</h2>
+                    <p>A Travel é uma agência de viagens comprometida em criar experiências <b>excepcionais</b> para nossos clientes. Com uma equipe apaixonada e experiente, oferecemos pacotes personalizados que garantem aventuras inesquecíveis, cheias de conforto e segurança. Nosso objetivo é proporcionar momentos únicos, planejando cada detalhe com cuidado e dedicação.</p>
+                    <br/>
+                    <h3>Porque viajar com a Travel?</h3>
+                    <p>Porque transformamos seus sonhos de viagem em realidade, cuidando de tudo para que você possa simplesmente relaxar e aproveitar cada instante. Descubra novos horizontes com a gente e faça da sua próxima viagem uma memória <b>inesquecível.</b></p>
+                </div>
             </div>
+
         </div>
     )
 }

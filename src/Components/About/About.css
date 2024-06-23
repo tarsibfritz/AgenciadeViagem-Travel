@@ -1,37 +1,45 @@
 /* ABOUT */
 #about {
-  display: flex;
-  padding: 20px;
+  color: var(--branco);
   width: 100%;
-  position: relative;
-  text-align: center;
-  justify-content: space-between;
+  height: 100%;
+  background-color: var(--azul-tom1);
+  padding-top: 5px;
+  margin-top: -15px;
 }
   
-#aboutHeading {
-  color: red;
-  font-size: 40px;
-  font-weight: 800;
+.about-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
+#aboutHeading{
+  text-shadow: 3px 2px rgba(0, 1, 2, 0.418);
+  font-family: var(--bebas-font);
+  font-weight: 500;
+  font-size: 42px;
+}
+
 #aboutImg {
-  margin: 2% 2% 2% 8%;
+  margin: 6% 2%;
   width: 350px;
-  height: 325px;
-  background-image: url(../../Images/about.jpg);
+  height: 350px;
+  background-image: url(../../Images/sobre.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-}
-  
-#aboutText {
-  width: 55%;
+  border-radius: 4%;
 }
 
-#aboutText p {
-  font-weight: 500;
+#aboutText{
+  font-family: var(--arimo-font);
+  width: 35em;
 }
 
-#aboutText h1 {
-  font-weight: 700;
+#aboutText p{
+  margin-top: 4px;
+}
+
+#aboutText b{
+  color: var(--amarelo);
 }

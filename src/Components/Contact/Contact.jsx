@@ -4,32 +4,28 @@ export default function Contact() {
     return (
         <div id="contact">
             <form>
-                <h1>Contacte-nos abaixo</h1>
+                <h1>CONTATO</h1>
                 <div className="contactUs">
                     {/* FORM */}
                     <div className="form-grid">
                         <div className="form-group">
-                            <p>Nome</p>
+                            <p>Nome:</p>
                             <input type="text" placeholder="Nome" className="form-control" required="required" />
                         </div>
 
                         <div className="form-group">
-                            <p>Sobrenome</p>
+                            <p>Sobrenome:</p>
                             <input type="text" placeholder="Sobrenome" className="form-control" required="required" />
                         </div>
 
-                        <div className="form-group">
-                            <p>Email</p>
+                        <div className="form-group full-width">
+                            <p >Email:</p>
                             <input type="email" placeholder="example@mail.com" className="form-control" required="required" />
                         </div>
 
-                        <div className="form-group">
-                            <p>Assunto</p>
-                            <input type="text" placeholder="Como podemos ajudar?" className="form-control" />
-                        </div>
 
                         <div className="form-group full-width">
-                            <p>Comentários / Perguntas</p>
+                            <p>Comentários / Perguntas:</p>
                             <textarea rows="5" placeholder="Sua mensagem..." className="form-control" />
                         </div>
                     </div>

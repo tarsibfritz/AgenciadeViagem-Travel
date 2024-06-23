@@ -1,39 +1,46 @@
-/* Services */
-#services {
+#services{
+    color: var(--branco);
+    background-color: var(--azul-tom1);
     text-align: center;
-    width: 100%;
-    float: left;
-    color: rgb(255, 255, 255);
-    background-image: url(../../Images/banner_bg_1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-  
-#services .card {
-    width: 25%;
-    display: inline-block;
-    text-align: center;
-    margin-left: 2%;
-    margin-top: 30px;
-    background-color: transparent;
-    border: 1px solid transparent !important;
+    padding-top: 5px;
+    margin-top: -15px;
 }
 
-#services h1 {
-    font-weight: 700;
+#services h1, #services h2{
+    font-family: var(--bebas-font);
+    font-weight: 300;
+}
+
+#services h1{
+    font-size: 42px;
+    margin-top: 60px;
+}
+
+#services h2{
+    font-size: 26px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+#services .card{
+    width: 25%;
+    margin-top: 2.2em;
+    margin-bottom: 6em;
 }
 
 #services p {
     padding: 10px;
+    font-family: var(--arimo-font);
+    font-size: 16px;
 }
 
-.card-title {
-    font-weight: 700;
-    padding-top: 10px;
-}
-
-.card img {
-    width: 200px;
-    height: 180px;
-    border-radius: 50%;
+.card img{
+    width: auto;
+    height: auto;
 }

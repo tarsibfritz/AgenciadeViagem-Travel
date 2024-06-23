@@ -1,48 +1,44 @@
-import './Footer.css'
-// IMAGES
-import fb from '../../Images/fb.png';
-import twi from '../../Images/twi5.png';
-import ins from '../../Images/ins1.jpg';
-import lin from '../../Images/lin5.png';
+
+import "./Footer.css"
+import fb from "../../Images/fb.png"
+import ins1 from "../../Images/ins1.jpg"
+import lin5 from "../../Images/lin5.png"
+import xwit from "../../Images/xwit.jpeg"
 
 export default function Footer() {
     return (
-        <div id="footer" className="myfooter">
-            <div className="footer-content">
-            <div className="card">
-                <br />
-                <div className="card-body">
-                    <h3 className="card-title">Sobre Nós</h3>
-                    <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus earum non molestias suscipit</p>
-                    <a href="/"><img src={fb} alt="social media" /></a>
-                    <a href="/"><img src={twi} alt="social media" /></a>
-                    <a href="/"><img src={ins} alt="social media" /></a>
-                    <a href="/"><img src={lin} alt="social media" /></a>
-                </div>
-                </div>
 
-                <div className="card">
-                    <br />
-                    <div className="card-body">
-                        <h3 className="card-title">Horário de Funcionamento</h3>
-                        <p className="text">Terça a Sexta: 12PM to 10PM</p>
-                        <p className="text">Sábado: 12PM to 12AM</p>
-                        <p className="text">Domingo: 12PM to 12AM</p>
-                    </div>
+        <div className="footer">
+            <div className="footer-container">
+                <div className="footer-section">
+                    <h5>Sobre Nós</h5>
+                    <p>Na Travel, realizamos sonhos com viagens inesquecíveis. Oferecemos serviços personalizados, garantindo segurança, conforto e satisfação. Explore o mundo com a gente!</p>
+                    <img className="redesSociais"src={fb} alt="" />
+                    <img className="redesSociais"src={ins1} alt="" />
+                    <img className="redesSociais"src={lin5} alt="" />
+                    <img className="redesSociais"src={xwit} alt="" />
                 </div>
-
-                <div className="card">
-                    <br />
-                    <div className="card-body">
-                        <h3 className="card-title">Contato</h3>
-                        <p className="text">Endereço: Rua Principal, Centro</p>
-                        <p className="text">Tel: 03943247810</p>
-                        <p className="text">Email: restaurant@gmail.com</p>
-                    </div>
+                <div className="footer-section">
+                    <h5>Navegação</h5>
+                    <ul>
+                        <li><a href="/">Início</a></li>
+                        <li><a href="/pricing">Pacotes</a></li>
+                        <li><a href="/services">Serviços</a></li>
+                        <li><a href="/contact">Contato</a></li>
+                    </ul>
                 </div>
+                <div className="footer-section">
+                    <h5>Contato</h5>
+                    <ul>
+                        <li><i className="fas fa-map-marker-alt"></i> Rua Padre Eustáquio, Centro, 123</li>
+                        <li><i className="fas fa-phone"></i> (99) 91234-5678</li>
+                        <li><i className="fas fa-envelope"></i> travel.agencia@gmail.com</li>
+                    </ul>
+                </div>
+                <hr />
             </div>
-            <div>
-                <p id="rights">Todos os direitos reservados | Restaurant Prime</p><br />
+            <div className="footer-rodape">
+                <p>&copy; 2024 Travel. Todos os direitos reservados.</p>
             </div>
         </div>
     )
