@@ -13,10 +13,10 @@ export default function Footer() {
                 <div className="footer-section">
                     <h5>Sobre Nós</h5>
                     <p>Na Travel, realizamos sonhos com viagens inesquecíveis. Oferecemos serviços personalizados, garantindo segurança, conforto e satisfação. Explore o mundo com a gente!</p>
-                    <img className="redesSociais"src={fb} alt="" />
-                    <img className="redesSociais"src={ins1} alt="" />
-                    <img className="redesSociais"src={lin5} alt="" />
-                    <img className="redesSociais"src={xwit} alt="" />
+                    <a href="https://www.facebook.com/" target="_blank"><img className="redesSociais"src={fb} alt="" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img className="redesSociais"src={ins1} alt="" /></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img className="redesSociais"src={lin5} alt="" /></a>
+                    <a href="https://x.com/?lang=pt-br" target="_blank"><img className="redesSociais"src={xwit} alt="" /></a>
                 </div>
                 <div className="footer-section">
                     <h5>Navegação</h5>

@@ -48,7 +48,7 @@ nav {
   bottom: -2px;
   width: 0%;
   height: 2px;
-  transition: width 0.7s ease;
+  transition: width 0.9s ease;
 }
 
 nav ul li .active::before {
@@ -103,15 +103,17 @@ a:hover {
   text-decoration: none;
 }
 
-.btn a:hover {
-  color: var(--branco);
-}
+
 
 .btn:hover {
   color: var(--branco) !important;
   background-color: var(--azul-tom2);
   text-decoration: none;
   border: none;
+  transition: 0.4s ease;
+  box-shadow: 0 0 6px var(--azul-tom4);
+  border-radius: 50px;
+  padding: 5px 10px;
 }
 
 /* MENU */

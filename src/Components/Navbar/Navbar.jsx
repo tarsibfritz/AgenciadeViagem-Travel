@@ -1,9 +1,20 @@
 import { useState, useEffect } from 'react';
+
+import { useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const Navbar = () => {
+
+    const location = useLocation();
+
+    // Efeito para rolar para o topo quando a localização muda
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }, [location]);
+
+
     const [menuOpen, setMenuOpen] = useState(false);
     const [modal, setModal] = useState(false);
 
@@ -85,7 +96,7 @@ const Navbar = () => {
                 <label htmlFor="click" className="menu-btn">
                     <i className="fas fa-bars"></i>
                     <div id="logo">
-                        <Link to="/" className='navbar-brand'><h1>Travel</h1></Link>
+                        <Link to="/" className='navbar-brand' onClick={handleMenuItemClick} ><h1>Travel</h1></Link>
                     </div>
                 </label>
                 <div className='navbar_menu'>
@@ -96,7 +107,6 @@ const Navbar = () => {
                         <li><NavLink to="/pricing" onClick={handleMenuItemClick}>Pacotes</NavLink></li>
                         {/* <li><NavLink to="/team" onClick={handleMenuItemClick}>Equipe</NavLink></li> */}
                         <li><NavLink to="/contact" onClick={handleMenuItemClick}>Contato</NavLink></li>
-                        <li><button onClick={toggleModal} className='btn btn-signup show'>sdfgfsdgdfgdfgd</button></li>
                     </ul>
                 </div>
 
